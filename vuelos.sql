@@ -68,3 +68,11 @@ INSERT INTO cliente(id_cliente,id_pasaporte,nombre,edad,nacionalidad) VALUES
 (3,352,"Tebi",42,"Colombia"),
 (4,328,"Camilo",30,"Colombia"),
 (5,325,"Diego",20,"Colombia");
+
+UPDATE cliente SET id_pasaporte = '1244' WHERE id_cliente = 1;
+UPDATE cliente SET id_pasaporte = '1214' WHERE id_cliente = 3;
+UPDATE cliente SET id_pasaporte = '1124' WHERE id_cliente = 2;
+UPDATE cliente SET id_pasaporte = '1634' WHERE id_cliente = 5;
+
+DELETE FROM vuelo WHERE id_vuelo = 1;
+DELETE FROM cliente WHERE id_cliente = 1;
