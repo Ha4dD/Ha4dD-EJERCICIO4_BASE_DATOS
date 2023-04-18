@@ -47,3 +47,24 @@ CREATE TABLE cliente_vuelo(
     FOREIGN KEY(id_cliente) REFERENCES cliente(id_cliente) ON DELETE CASCADE,
     FOREIGN KEY(id_vuelo) REFERENCES vuelo(id_vuelo) ON DELETE CASCADE
 );
+
+INSERT INTO hotel(id_hotel,nombre,precio_alquiler,clasificacion,ubicacion) VALUES
+(1,"tuki",40,3,"popayan"),
+(2,"panorama",40,3,"popayan"),
+(3,"lleguen",60,4,"cali"),
+(4,"tuki1",40,3,"popayan"),
+(5,"tuki2",40,3,"popayan");
+
+INSERT INTO reservacion(id_reservacion,fecha,precio,id_hotel) VALUES
+(1,"03/09/2021",131,1),
+(2,"03/07/2021",112,2),
+(3,"04/09/2021",190,3),
+(4,"08/01/2021",132,4),
+(5,"03/02/2021",120,5);
+
+INSERT INTO cliente(id_cliente,id_pasaporte,nombre,edad,nacionalidad) VALUES
+(1,321,"Juan",21,"Colombia"),
+(2,323,"Boli",18,"Colombia"),
+(3,352,"Tebi",42,"Colombia"),
+(4,328,"Camilo",30,"Colombia"),
+(5,325,"Diego",20,"Colombia");
